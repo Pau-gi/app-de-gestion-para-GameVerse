@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Registro de Consolas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Consolas - GameVerse</h1>
+        <input type="text" id="consola" placeholder="Consola (Ej: PS5, Xbox, Switch)">
+        <input type="date" id="fechaIngreso">
+        <input type="text" id="cliente" placeholder="Nombre del Cliente">
+        <input type="tel" id="telefono" placeholder="Número de Teléfono">
+        <button onclick="agregarConsola()">Agregar Consola</button>
+        <ul id="listaConsolas"></ul>
+        <button onclick="location.href='archivadas.html'">Ver Consolas Entregadas</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
