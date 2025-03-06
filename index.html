@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameVerse - Registro de Consolas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVerse - Registro de Consolas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <div class="container">
-        <h1>Registro de Consolas - GameVerse</h1>
-        <input type="text" id="consola" placeholder="Consola (Ej: PS5, Xbox, Switch)">
-        <input type="date" id="fechaIngreso">
-        <input type="text" id="cliente" placeholder="Nombre del Cliente">
-        <input type="tel" id="telefono" placeholder="Número de Teléfono">
-        <button onclick="agregarConsola()">Agregar Consola</button>
-        <ul id="listaConsolas"></ul>
-        <button onclick="location.href='archivadas.html'">Ver Consolas Entregadas</button>
+<body class="hide-on-med-and-up">
+  <div class="console-container">
+    <div class="console-body">
+      <div class="screen-container">
+        <div class="main-screen">
+          <div class="app-content">
+            <h4 class="center-align console-title">GameVerse</h4>
+            <div class="input-field">
+              <input type="text" id="consola" class="validate">
+              <label for="consola">Consola (Ej: PS5, Xbox, Switch)</label>
+            </div>
+            <div class="input-field">
+              <input type="date" id="fechaIngreso" class="validate">
+              <label for="fechaIngreso" class="active">Fecha de Ingreso</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="cliente" class="validate">
+              <label for="cliente">Nombre del Cliente</label>
+            </div>
+            <div class="input-field">
+              <input type="tel" id="telefono" class="validate">
+              <label for="telefono">Número de Teléfono</label>
+            </div>
+            <div class="center-align">
+              <button class="btn waves-effect waves-light console-btn" onclick="agregarConsola()">
+                <i class="material-icons left">add</i>Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sub-screen">
+          <div class="info-panel">
+            <ul id="listaConsolas" class="collection"></ul>
+          </div>
+        </div>
+        <div class="console-controls">
+          <div class="btn-group left-side">
+            <div class="shoulder-btn">L</div>
+          </div>
+          <div class="btn-group right-side">
+            <div class="shoulder-btn">R</div>
+          </div>
+        </div>
+      </div>
+      <div class="console-buttons">
+        <div class="dpad"></div>
+        <div class="nav-buttons">
+          <a href="archivadas.html" class="btn waves-effect waves-light console-btn secondary-btn">
+            <i class="material-icons left">archive</i>Consolas Entregadas
+          </a>
+        </div>
+      </div>
     </div>
-    <script src="app.js"></script>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
