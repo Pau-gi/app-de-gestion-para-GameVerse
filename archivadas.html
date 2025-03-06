@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameVerse - Consolas Entregadas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVerse - Consolas Entregadas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Consolas Entregadas</h1>
-        <ul id="listaArchivadas"></ul>
-        <button onclick="location.href='index.html'">Volver a Registro</button>
+<body class="hide-on-med-and-up">
+  <div class="console-container">
+    <div class="console-body">
+      <div class="screen-container">
+        <div class="main-screen">
+          <div class="app-content">
+            <h4 class="center-align console-title">Consolas Entregadas</h4>
+          </div>
+        </div>
+        <div class="sub-screen">
+          <div class="info-panel">
+            <ul id="listaArchivadas" class="collection"></ul>
+          </div>
+        </div>
+        <div class="console-controls">
+          <div class="btn-group left-side">
+            <div class="shoulder-btn">L</div>
+          </div>
+          <div class="btn-group right-side">
+            <div class="shoulder-btn">R</div>
+          </div>
+        </div>
+      </div>
+      <div class="console-buttons">
+        <div class="dpad"></div>
+        <div class="nav-buttons">
+          <a href="index.html" class="btn waves-effect waves-light console-btn">
+            <i class="material-icons left">arrow_back</i>Volver a Registro
+          </a>
+        </div>
+      </div>
     </div>
-    <script src="archivadas.js"></script>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="archivadas.js"></script>
 </body>
 </html>
