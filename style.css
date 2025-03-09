@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
 body {
-    background-color: #5f1d6e;
+    background-color: #52305A;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ body {
   }
   
   .console-body {
-    background-color: #f9e44c;
+    background-color: #F5DE76;
     border-radius: 20px;
     padding: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -26,7 +27,7 @@ body {
   }
   
   .screen-container {
-    background-color: #5f1d6e;
+    background-color: #52305A;
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 20px;
@@ -55,7 +56,7 @@ body {
   }
   
   .console-title {
-    color: #635985;
+    color: #A176F5;
     margin-top: 5px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -64,16 +65,16 @@ body {
   }
   
   .console-btn {
-    background-color: #5f1d6e;
+    background-color: #52305A ;
     margin: 5px 0;
   }
   
   .console-btn:hover {
-    background-color: #5f1d6e;
+    background-color: #52305A;
   }
   
   .secondary-btn {
-    background-color: #5f1d6e;
+    background-color: #52305A;
   }
   
   .console-controls {
@@ -84,8 +85,8 @@ body {
   }
   
   .shoulder-btn {
-    background-color: #a39bc9;
-    color: black;
+    background-color: #D9F576;
+    color: #52305A;
     width: 40px;
     height: 30px;
     border-radius: 5px;
@@ -115,7 +116,7 @@ body {
   .dpad {
     width: 80px;
     height: 80px;
-    background-color: #5f1d6e;
+    background-color: #52305A;
     position: relative;
     clip-path: polygon(33% 0%, 66% 0%, 66% 33%, 100% 33%, 100% 66%, 66% 66%, 66% 100%, 33% 100%, 33% 66%, 0% 66%, 0% 33%, 33% 33%);
   }
@@ -159,83 +160,64 @@ body {
   }
   
   .edit-btn {
-    background-color: #ffc107;
+    background-color: #F5DE76;
+    color: #52305A;
   }
   
-  .entregado-btn {
-    background-color: #4CAF50;
-    color: white;
+  .delete-btn {
+    background-color: #52305A;
+  }
+
+  .estado {
+    color: #52305A;
+    font-weight: 500;
+  }
+  
+  .botones button {
+    margin: 2px;
+    padding: 5px 8px;
     border: none;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 2px 2px;
-    cursor: pointer;
     border-radius: 4px;
-  }
-  
-  .entregado-btn:hover {
-    background-color: #45a049;
-  }
-  
-  .botones {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 5px;
-  }
-  
-  .estado-btn, .editar-btn, .borrar-btn {
-    border: none;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 2px 0;
     cursor: pointer;
-    border-radius: 4px;
   }
   
   .estado-btn {
-    background-color: #2196F3;
+    background-color: #A176F5;
     color: white;
+  }
+  
+  .entregado-btn {
+    background-color: #D9F576;
+    color: #52305A;
   }
   
   .editar-btn {
-    background-color: #FF9800;
-    color: white;
+    background-color: #F5DE76;
+    color: #52305A;
   }
   
   .borrar-btn {
-    background-color: #f44336;
+    background-color: #52305A;
     color: white;
-  }
-
-  .delete-btn {
-    background-color: #f44336;
   }
   
   input[type=text]:not(.browser-default):focus:not([readonly]),
   input[type=tel]:not(.browser-default):focus:not([readonly]),
   input[type=date]:not(.browser-default):focus:not([readonly]) {
-    border-bottom: 1px solid #635985;
-    box-shadow: 0 1px 0 0 #635985;
+    border-bottom: 1px solid #A176F5;
+    box-shadow: 0 1px 0 0 #A176F5;
   }
   
   input[type=text]:not(.browser-default):focus:not([readonly]) + label,
   input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
   input[type=date]:not(.browser-default):focus:not([readonly]) + label {
-    color: #635985;
+    color: #A176F5;
   }
   
   .waves-effect.waves-light .waves-ripple {
-    background-color: rgba(99, 89, 133, 0.5);
+    background-color: rgba(161, 118, 245, 0.5);
   }
   
-
   @media only screen and (max-width: 400px) {
     .main-screen {
       height: 280px;
