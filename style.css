@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
 body {
     background-color: #5f1d6e;
     font-family: 'Arial', sans-serif;
@@ -58,6 +59,8 @@ body {
     margin-top: 5px;
     margin-bottom: 15px;
     font-weight: bold;
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 1px;
   }
   
   .console-btn {
@@ -210,7 +213,7 @@ body {
     background-color: #f44336;
     color: white;
   }
-  
+
   .delete-btn {
     background-color: #f44336;
   }
