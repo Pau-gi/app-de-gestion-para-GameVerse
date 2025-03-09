@@ -159,6 +159,58 @@ body {
     background-color: #ffc107;
   }
   
+  .entregado-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .entregado-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+  }
+  
+  .estado-btn, .editar-btn, .borrar-btn {
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .estado-btn {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .editar-btn {
+    background-color: #FF9800;
+    color: white;
+  }
+  
+  .borrar-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
   .delete-btn {
     background-color: #f44336;
   }

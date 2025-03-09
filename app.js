@@ -19,6 +19,7 @@ function agregarConsola() {
         <p class="estado">Estado: <span id="estadoTexto">Llegada</span></p>
         <div class="botones">
             <button class="estado-btn" onclick="cambiarEstado(this)">Cambiar Estado</button>
+            <button class="entregado-btn" onclick="entregarConsola(this)">Entregado</button>
             <button class="editar-btn" onclick="editarConsola(this)">Editar</button>
             <button class="borrar-btn" onclick="borrarConsola(this)">Eliminar</button>
         </div>
@@ -52,8 +53,8 @@ function borrarConsola(boton) {
     guardarConsolas();
 }
 
-function archivarConsola(boton) {
-    const consolaEntregada = boton.parentElement;
+function entregarConsola(boton) {
+    const consolaEntregada = boton.parentElement.parentElement;
     const listaArchivadas = JSON.parse(localStorage.getItem("archivadas")) || [];
 
     listaArchivadas.push(consolaEntregada.innerHTML);
