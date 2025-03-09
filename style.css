@@ -65,7 +65,7 @@ body {
   }
   
   .console-btn {
-    background-color: #52305A ;
+    background-color: #A176F5;
     margin: 5px 0;
   }
   
@@ -116,7 +116,7 @@ body {
   .dpad {
     width: 80px;
     height: 80px;
-    background-color: #52305A;
+    background-color: #A176F5;
     position: relative;
     clip-path: polygon(33% 0%, 66% 0%, 66% 33%, 100% 33%, 100% 66%, 66% 66%, 66% 100%, 33% 100%, 33% 66%, 0% 66%, 0% 33%, 33% 33%);
   }
@@ -170,7 +170,12 @@ body {
 
   .estado {
     color: #52305A;
-    font-weight: 500;
+    font-weight: 600;
+  }
+  
+  #estadoTexto {
+    color: #52305A;
+    font-weight: 700;
   }
   
   .botones button {
